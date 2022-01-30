@@ -1,0 +1,40 @@
+<app-button text="View All Users" (btnClick)="viewUsers()"></app-button>
+<br>
+<app-button text="View Today bills" (btnClick)="viewBillsToday()"></app-button>
+<br>
+<hr>
+<form #create = "ngForm" (ngSubmit) = "createUser(create.value)">
+    <h4>Create User</h4>
+    <label>email: </label>
+    <input name="email" type="text" ngModel>
+    <br>
+    <label>password: </label>
+    <input name="password" type="text" ngModel>
+    <br>
+    <label>type: </label>
+    <input name="type" type="text" ngModel>
+    <br>
+    <input type = "submit" value = "submit">
+</form>
+
+<hr>
+
+<form #update = "ngForm" (ngSubmit) = "updateUser(update.value)">
+    <h4>Update User</h4>
+    <label>email: </label>
+    <input name="email" type="text" ngModel>
+    <br>
+    <label>type: </label>
+    <input name="type" type="text" ngModel>
+    <br>
+    <input type = "submit" value = "submit">
+</form>
+
+<hr>
+
+<form #delete = "ngForm" (ngSubmit) = "deleteUser(delete.value)">
+    <h4>Delete user</h4>
+    <input name="email" type="text" ngModel>
+    <br>
+    <input type = "submit" value = "submit">
+</form>

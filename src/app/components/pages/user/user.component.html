@@ -1,0 +1,16 @@
+<app-button text="View Inventory" (btnClick)="viewInventory()"></app-button>
+<br>
+<hr>
+<form #order = "ngForm" (ngSubmit) = "placeOrder(order.value)">
+    <h4>Place Order</h4>
+    <label>City: </label>
+    <input name="city" type="text" ngModel>
+    <br>
+    <label>Code: </label>
+    <input name="code" type="text" ngModel>
+    <br>
+    <label>Comma seperated orderId: </label>
+    <input name="orderId" type="text" ngModel>
+    <br>
+    <input type = "submit" value = "submit">
+</form>

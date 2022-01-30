@@ -1,0 +1,12 @@
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.header-bar{
+    /* width:max-content; */
+    background-color: burlywood;
+    border: 1mm;
+    border-color: black;
+    padding: 1mm;
+}
